@@ -71,6 +71,7 @@ module keccak
 // --------------------------------------------------
 //	FSM PARAMETER
 // --------------------------------------------------
+	// Change?
 	localparam	S_IDLE			= 3'b001;
 	localparam	S_ABSB			= 3'b101;
 	localparam	S_ABSB_KECCAK	= 3'b111;
