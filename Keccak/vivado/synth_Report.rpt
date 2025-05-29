@@ -1,0 +1,373 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed May 28 21:28:53 2025
+# Process ID         : 11800
+# Current directory  : C:/Users/VVOK/keccak/top_keccak/top_keccak.runs/synth_1_copy_1
+# Command line       : vivado.exe -log keccak.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source keccak.tcl
+# Log file           : C:/Users/VVOK/keccak/top_keccak/top_keccak.runs/synth_1_copy_1/keccak.vds
+# Journal file       : C:/Users/VVOK/keccak/top_keccak/top_keccak.runs/synth_1_copy_1\vivado.jou
+# Running On         : DESKTOP-KQKB7F1
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5600G with Radeon Graphics         
+# CPU Frequency      : 3893 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 14892 MB
+# Swap memory        : 38654 MB
+# Total Virtual      : 53547 MB
+# Available Virtual  : 16442 MB
+#-----------------------------------------------------------
+source keccak.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/utils_1/imports/synth_1/keccak.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/utils_1/imports/synth_1/keccak.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top keccak -part xc7a200tfbg676-2 -bufg 1 -directive PerformanceOptimized -global_retiming on -fsm_extraction gray -keep_equivalent_registers -no_lc -no_srlextract -shreg_min_size 10 -incremental_mode aggressive
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28948
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1077.777 ; gain = 470.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'keccak' [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccak.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccak.v:155]
+INFO: [Synth 8-6157] synthesizing module 'keccakf1600' [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccakf1600.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'keccakf1600' (0#1) [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccakf1600.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'keccak' (0#1) [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccak.v:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1265.645 ; gain = 657.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1265.645 ; gain = 657.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1265.645 ; gain = 657.926
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1265.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/constrs_1/new/clk.xdc]
+Finished Parsing XDC File [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/constrs_1/new/clk.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1360.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1360.062 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy aggressive
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1360.062 ; gain = 752.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1360.062 ; gain = 752.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1360.062 ; gain = 752.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'keccakf1600'
+INFO: [Synth 8-802] inferred FSM for state register 'c_state_reg' in module 'keccak'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                  S_COMP |                               01 |                               01
+                  S_DONE |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'gray' in module 'keccakf1600'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              001
+                  S_ABSB |                              001 |                              101
+           S_ABSB_KECCAK |                              011 |                              111
+           S_PADD_KECCAK |                              010 |                              110
+                  S_SQUZ |                              110 |                              010
+           S_SQUZ_KECCAK |                              111 |                              011
+                  S_DONE |                              101 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'c_state_reg' using encoding 'gray' in module 'keccak'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_gray_n_state_reg' [C:/Users/VVOK/keccak/top_keccak/top_keccak.srcs/sources_1/new/keccak.v:156]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1360.062 ; gain = 752.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 2     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   5 Input     64 Bit         XORs := 5     
+	   2 Input     64 Bit         XORs := 63    
+	   2 Input      8 Bit         XORs := 407   
++---Registers : 
+	               64 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input 1600 Bit        Muxes := 2     
+	   2 Input 1600 Bit        Muxes := 5     
+	   2 Input   64 Bit        Muxes := 7     
+	   3 Input   11 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 4     
+	   3 Input    8 Bit        Muxes := 2     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 10    
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 10    
+	   7 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 1817.629 ; gain = 1209.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1817.629 ; gain = 1209.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (-759.0/oG. 155.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:52 ; elapsed = 00:02:56 . Memory (MB): peak = 2123.898 ; gain = 1516.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `keccak__GB1`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `keccak__GB1' done
+
+
+RETIMING: forward move fails for register i_0/cnt_block_reg[3] along load instance i_0/i_6506
+RETIMING: forward move fails for register i_0/cnt_block_reg[2] along load instance i_0/i_6506
+RETIMING: forward move fails for register i_0/cnt_block_reg[2] along load instance i_0/i_6587
+RETIMING: forward move fails for register i_0/cnt_block_reg[1] along load instance i_0/i_6506
+RETIMING: forward move fails for register i_0/cnt_block_reg[1] along load instance i_0/i_6587
+RETIMING: forward move fails for register i_0/cnt_block_reg[0] along load instance i_0/i_6506
+RETIMING: forward move fails for register i_0/cnt_block_reg[0] along load instance i_0/i_6587
+INFO: [Synth 8-5816] Retiming module `keccak_GT0`
+	Numbers of forward move = 2, and backward move = 0
+
+	Retimed registers names:
+		i_0/cnt_block_reg[5]_fret__0
+		i_0/cnt_block_reg[5]_fret__1
+		i_0/cnt_block_reg[5]_fret__10
+		i_0/cnt_block_reg[5]_fret__11
+		i_0/cnt_block_reg[5]_fret__12
+		i_0/cnt_block_reg[5]_fret__13
+		i_0/cnt_block_reg[5]_fret__14
+		i_0/cnt_block_reg[5]_fret__15
+		i_0/cnt_block_reg[5]_fret__16
+		i_0/cnt_block_reg[5]_fret__17
+		i_0/cnt_block_reg[5]_fret__18
+		i_0/cnt_block_reg[5]_fret__19
+		i_0/cnt_block_reg[5]_fret__2
+		i_0/cnt_block_reg[5]_fret__20
+		i_0/cnt_block_reg[5]_fret__21
+		i_0/cnt_block_reg[5]_fret__22
+		i_0/cnt_block_reg[5]_fret__23
+		i_0/cnt_block_reg[5]_fret__3
+		i_0/cnt_block_reg[5]_fret__4
+		i_0/cnt_block_reg[5]_fret__5
+		i_0/cnt_block_reg[5]_fret__6
+		i_0/cnt_block_reg[5]_fret__7
+		i_0/cnt_block_reg[5]_fret__8
+		i_0/cnt_block_reg[5]_fret__9
+ 
+
+INFO: [Synth 8-5816] Retiming module `keccak_GT0' done
+
+
+INFO: [Synth 8-5816] Retiming module `keccak`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `keccak' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:03 ; elapsed = 00:03:07 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:07 ; elapsed = 00:03:11 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Retiming Report:
++--------------------+----+
+|Retiming summary:   |    | 
++--------------------+----+
+|Forward Retiming    | 2  | 
+|Backward Retiming   | 0  | 
+|New registers added | 24 | 
+|Registers deleted   | 0  | 
++--------------------+----+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    37|
+|3     |LUT1   |    31|
+|4     |LUT2   |   249|
+|5     |LUT3   |   119|
+|6     |LUT4   |  1728|
+|7     |LUT5   |   840|
+|8     |LUT6   |  3552|
+|9     |MUXF7  |   256|
+|10    |FDCE   |  1759|
+|11    |FDPE   |     3|
+|12    |LD     |     3|
+|13    |IBUF   |    90|
+|14    |OBUF   |    67|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:59 ; elapsed = 00:03:09 . Memory (MB): peak = 2355.941 ; gain = 1653.805
+Synthesis Optimization Complete : Time (s): cpu = 00:03:08 ; elapsed = 00:03:12 . Memory (MB): peak = 2355.941 ; gain = 1748.223
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 2355.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 296 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'keccak' is not ideal for floorplanning, since the cellview 'keccak' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2355.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+Synth Design complete | Checksum: 7300121d
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:13 ; elapsed = 00:03:19 . Memory (MB): peak = 2355.941 ; gain = 1986.086
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2355.941 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/VVOK/keccak/top_keccak/top_keccak.runs/synth_1_copy_1/keccak.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file keccak_utilization_synth.rpt -pb keccak_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 21:32:18 2025...
+
